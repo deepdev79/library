@@ -36,7 +36,8 @@ form {
 
 input[type="number"],
 input[type="text"],
-select {
+select,
+input[type="checkbox"] {
   font-size: 2rem;
   padding: 12px;
   margin: 8px 0;
