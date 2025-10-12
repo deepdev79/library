@@ -8,21 +8,26 @@
   </head>
   <body>
     <h1>My Library</h1>
-    <button class="btn">Add Book</button>
+    <div class="btn1">
+      <button class="btn">Add Book</button>
+    </div>
     <div class="bform hidden">
       <form action="" class="book">
         <label for="b-Name">Book Name:</label>
-        <input type="text" id="b-name" name="Book" /><br />
+        <input type="text" id="b-name" name="Book" required /><br />
         <label for="a-name">Author:</label>
-        <input type="text" name="Author" id="a-name" /><br />
+        <input type="text" name="Author" id="a-name" required /><br />
         <label for="pages">Pages</label>
-        <input type="number" name="Pages" id="pages" /><br />
+        <input type="number" name="Pages" id="pages" required /><br />
         <label for="status">Have you read the book?</label>
         <select name="status" id="status">
           <option value="true">Read</option>
           <option value="false">Unread</option>
         </select>
-        <input type="submit" value="Submit" />
+        <div class="s-opt">
+          <input type="submit" value="Submit" />
+          <button class="btn">Cancel</button>
+        </div>
       </form>
     </div>
     <table class="book-table">
